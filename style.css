@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:white;
+}
+
+body {
+
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(1,90,190,1);
+    overflow:hidden;
+
+}
+
+.container {
+
+    height:100vh;
+    margin:0 5rem;
+    margin-top: 20px;
+    
+    
+}
+
+.container nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav img {
+
+    width:60px;
+}
+
+.container nav ul {
+
+    list-style: none;
+    display: flex;
+    
+}
+
+.container nav ul a {
+
+    margin-right: 60px;
+    font-size:18px;
+    text-decoration: none;
+    padding-bottom:10px;
+}
+
+.container nav ul a:hover {
+
+    border-bottom: solid 2px white;
+}
+
+.container .content {
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height:60%;
+}
+
+
+.container .content img {
+
+    width:220px;
+    animation-name:animation1;
+    animation-duration:1s;
+    animation-timing-function:ease-out;
+}
+
+.container .content .content-text h2 {
+
+
+    font-size:52px;
+    letter-spacing: 4px;
+}
+
+.container .content .content-text h2 span {
+
+    font-size:72px;
+}
+
+.container .content .content-text p {
+
+    width:60%;
+    font-size:18px;
+    margin:20px 0;
+    margin-bottom: 2rem;
+}
+
+
+.container .content .content-text .btn {
+
+    background-color: white;
+    color:black;
+    padding: 10px 20px;
+    border-radius:30px;
+    text-decoration: none;
+    transition-duration:0.5s;
+    
+}
+
+.container .content .content-text .btn:hover {
+
+    background-color:transparent;
+    color:white;
+    border:solid 1px white;
+}
+
+.container .content .social  {
+    
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-left:30px;
+}
+
+.container .content .social i {
+
+    font-size:24px;
+    animation-name:animation1;
+    animation-duration:1s;
+    animation-timing-function:ease-out;
+    
+ 
+}
+
+.container  .three {
+
+    width:50px;
+    margin:0 50%;
+    animation-name:animation2;
+    animation-duration:1s;
+    animation-timing-function:ease-out;
+    
+}
+
+
+@keyframes animation1 {
+
+    from {
+        transform:translateX(500px);
+    }
+
+    to {
+        transform:translateX(0px);
+    }
+}
+
+@keyframes animation2 {
+
+    0% {
+
+        transform:translateY(300px);
+    }
+
+    100% {
+        transform:translateY(0px);
+    }
+}
+
+/* 
+
+phons
+
+*/
+
+@media (max-width:600px) {
+
+
+    .container {
+
+        margin:0 2rem;
+        position: relative;
+    }
+    .container nav {
+
+        flex-direction: column;
+    }
+
+    .container nav ul a {
+
+        margin-right: 20px;
+        font-size:14px;
+        
+
+    }
+    .container nav img {
+
+        margin:20px 0;
+    }
+
+    .container .content  {
+
+        flex-direction: column;
+        
+    }
+    .container .content img {
+
+        width:80px;
+        margin-top: 30px;
+    }
+    .container .content .content-text h2{
+
+        font-size:24px;
+    }
+    .container .content .content-text h2 span {
+
+        font-size:30px;
+    }
+    .container .content .content-text p {
+        width:100%;
+        font-size: 14px;
+    }
+    .container .content .content-text .btn {
+
+        font-size:12px;
+        padding:8px 14px;
+        margin-left:30%;
+    }
+
+    .container .content .social  {
+
+        flex-direction: row;
+        margin-right:50px;
+        margin-top: 60px;
+    }
+
+    .container  .three {
+
+        position:absolute;
+        right:-20px;
+
+    }
+
+}
